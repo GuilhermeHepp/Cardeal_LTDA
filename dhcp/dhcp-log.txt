@@ -1,0 +1,65 @@
+Nov 24 17:12:48 vm1-gateway systemd[1]: Starting isc-dhcp-server.service - LSB: DHCP server...
+Nov 24 17:12:48 vm1-gateway isc-dhcp-server[2436]: Launching both IPv4 and IPv6 servers (please configure INTERFACES in /etc/default/isc-dhcp-server if you only want one or the other).
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: Wrote 0 leases to leases file.
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: 
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: No subnet declaration for enp0s8 (192.168.50.1).
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: ** Ignoring requests on enp0s8.  If this is not what
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]:    you want, please write a subnet declaration
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]:    in your dhcpd.conf file for the network segment
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]:    to which interface enp0s8 is attached. **
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: 
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: 
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: No subnet declaration for enp0s3 (10.0.2.15).
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: ** Ignoring requests on enp0s3.  If this is not what
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]:    you want, please write a subnet declaration
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]:    in your dhcpd.conf file for the network segment
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]:    to which interface enp0s3 is attached. **
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: 
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: 
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: Not configured to listen on any interfaces!
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: 
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: If you think you have received this message due to a bug rather
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: than a configuration issue please read the section on submitting
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: bugs on either our web page at www.isc.org or in the README file
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: before submitting a bug.  These pages explain the proper
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: process and the information we find helpful for debugging.
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: 
+Nov 24 17:12:48 vm1-gateway dhcpd[2448]: exiting.
+Nov 24 17:12:50 vm1-gateway isc-dhcp-server[2436]: Starting ISC DHCPv4 server: dhcpdcheck syslog for diagnostics. ... failed!
+Nov 24 17:12:50 vm1-gateway isc-dhcp-server[2436]:  failed!
+Nov 24 17:12:50 vm1-gateway systemd[1]: isc-dhcp-server.service: Control process exited, code=exited, status=1/FAILURE
+Nov 24 17:12:50 vm1-gateway systemd[1]: isc-dhcp-server.service: Failed with result 'exit-code'.
+Nov 24 17:12:50 vm1-gateway systemd[1]: Failed to start isc-dhcp-server.service - LSB: DHCP server.
+Nov 24 21:16:40 vm1-gateway systemd[1]: Starting isc-dhcp-server.service - LSB: DHCP server...
+Nov 24 21:16:40 vm1-gateway isc-dhcp-server[2633]: Launching IPv4 server only.
+Nov 24 21:16:40 vm1-gateway dhcpd[2645]: Wrote 0 leases to leases file.
+Nov 24 21:16:40 vm1-gateway dhcpd[2645]: Server starting service.
+Nov 24 21:16:42 vm1-gateway isc-dhcp-server[2633]: Starting ISC DHCPv4 server: dhcpd.
+Nov 24 21:16:42 vm1-gateway systemd[1]: Started isc-dhcp-server.service - LSB: DHCP server.
+Nov 24 21:21:23 vm1-gateway dhcpd[2645]: DHCPDISCOVER from 08:00:27:64:47:9a via enp0s8
+Nov 24 21:21:24 vm1-gateway dhcpd[2645]: DHCPOFFER on 192.168.50.100 to 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:21:24 vm1-gateway dhcpd[2645]: DHCPREQUEST for 192.168.50.100 (192.168.50.1) from 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:21:24 vm1-gateway dhcpd[2645]: DHCPACK on 192.168.50.100 to 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:26:28 vm1-gateway dhcpd[2645]: DHCPREQUEST for 192.168.50.100 from 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:26:28 vm1-gateway dhcpd[2645]: DHCPACK on 192.168.50.100 to 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:31:28 vm1-gateway dhcpd[2645]: DHCPREQUEST for 192.168.50.100 from 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:31:28 vm1-gateway dhcpd[2645]: DHCPACK on 192.168.50.100 to 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:36:30 vm1-gateway dhcpd[2645]: DHCPREQUEST for 192.168.50.100 from 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:36:30 vm1-gateway dhcpd[2645]: DHCPACK on 192.168.50.100 to 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:41:30 vm1-gateway dhcpd[2645]: DHCPREQUEST for 192.168.50.100 from 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:41:30 vm1-gateway dhcpd[2645]: DHCPACK on 192.168.50.100 to 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:42:37 vm1-gateway dhcpd[2645]: reuse_lease: lease age 67 (secs) under 25% threshold, reply with unaltered, existing lease for 192.168.50.100
+Nov 24 21:42:37 vm1-gateway dhcpd[2645]: DHCPREQUEST for 192.168.50.100 from 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 21:42:37 vm1-gateway dhcpd[2645]: DHCPACK on 192.168.50.100 to 08:00:27:64:47:9a (vm3-dns) via enp0s8
+Nov 24 22:23:45 vm1-gateway systemd[1]: Stopping isc-dhcp-server.service - LSB: DHCP server...
+Nov 24 22:23:45 vm1-gateway isc-dhcp-server[2844]: Stopping ISC DHCPv4 server: dhcpd.
+Nov 24 22:23:45 vm1-gateway systemd[1]: isc-dhcp-server.service: Deactivated successfully.
+Nov 24 22:23:45 vm1-gateway systemd[1]: isc-dhcp-server.service: Unit process 2645 (dhcpd) remains running after unit stopped.
+Nov 24 22:23:45 vm1-gateway systemd[1]: Stopped isc-dhcp-server.service - LSB: DHCP server.
+-- Boot 0ce7f53d573c488f81833a5db7d837c9 --
+Nov 25 00:23:57 vm1-gateway systemd[1]: Starting isc-dhcp-server.service - LSB: DHCP server...
+Nov 25 00:23:57 vm1-gateway isc-dhcp-server[758]: Launching IPv4 server only.
+Nov 25 00:23:58 vm1-gateway dhcpd[778]: Wrote 1 leases to leases file.
+Nov 25 00:23:58 vm1-gateway dhcpd[778]: Server starting service.
+Nov 25 00:24:00 vm1-gateway isc-dhcp-server[758]: Starting ISC DHCPv4 server: dhcpd.
+Nov 25 00:24:00 vm1-gateway systemd[1]: Started isc-dhcp-server.service - LSB: DHCP server.
